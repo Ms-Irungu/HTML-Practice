@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$80</td>
+        </tr>
+      </table>
+      <!-- specifying scope -->
+      <table>
+        <tr>
+            <th scope="col">Month</th>
+            <th scope="col">Savings</th>
+        </tr>
+        <tr>
+            <th scope="row">January</th>
+            <td>$100</td>
+        </tr>
+      </table>
+
+        <!-- Merging cells -->
+        <table>
+            <tr>
+              <th>Person</th>
+              <th colspan="2">Details</th>
+            </tr>
+            <tr>
+              <td>John Doe</td>
+              <td>Age: 30</td>
+              <td>Occupation: Developer</td>
+            </tr>
+          </table>
+
+        <!-- Table accessibility -->
+        <table>
+            <caption>Monthly Savings</caption>
+            <tr>
+              <th scope="col">Month</th>
+              <th scope="col">Savings</th>
+            </tr>
+            <tr>
+              <th scope="row">January</th>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <th scope="row">February</th>
+              <td>$80</td>
+            </tr>
+          </table>
+
+</body>
+</html>
