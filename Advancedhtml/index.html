@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="/Advancedhtml/images/logo_headphones.png" alt="Headphones Logo">
+            <div class="nav-links" id="navLinks">
+                <label for="menu-toggle" class="close-sidebar-button" onclick="hideMenu()">
+                    <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" fill="none" height="32px" viewBox="0 0 24 24" width="32px" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>      
+                </label>
+                <ul>
+                    <li><a href="">what we do</a></li>
+                    <li><a href="">our results</a></li>
+                    <li><a href="">contact us</a></li>
+                </ul>
+            </div>
+            <label for="menu-toggle" class="open-sidebar-button" onclick="showMenu()">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" height="32px" viewBox="0 0 24 24" width="32px" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </label>
+        </nav>
+
+        <div class="main-content">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+            <p class="sub-heading">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Iusto, tenetur recusandae</p>
+            <a class="main-content-btn" href="#">CALL TO ACTION</a>
+            <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aperiam impedit <br> excepturi eaque, sequi quasi velit
+                minus, maiores fugiat ab corporis <br> repudiandae
+                dignissimos incidunt nam veritatis atque dolorem
+                asperiores esse dolores?</p>
+        </div>
+    </header>
+    <main>
+
+    </main>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
