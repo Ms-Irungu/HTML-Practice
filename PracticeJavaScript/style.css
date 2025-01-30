@@ -1,0 +1,80 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Center the app */
+#app-container {
+    /* Transparent glass-like background */
+    background: rgba(255, 255, 255, 0.15); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Blurry background effect */
+    backdrop-filter: blur(10px); 
+    text-align: center;
+    width: 350px;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Input and Button */
+#input-text {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Button */
+#add-button {
+    background: #ff7eb3; /* Pinkish button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#add-button:hover {
+    background: #ff477e; /* Darker pink on hover */
+}
+
+/* List Items */
+#list-container {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#list-container li {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* List Hover Effect */
+#list-container li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
